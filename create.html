@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create forms</title>
+    <script>
+        // Get the time element
+        const timeElement = document.querySelector('time');
+      
+        // Get the current Unix timestamp in seconds
+        const currentTimestamp = Math.floor(Date.now() / 1000);
+      
+        // Set the value of the "data-timestamp" attribute
+        timeElement.setAttribute('data-timestamp', currentTimestamp);
+      </script>
+</head>
+<style>
+header{
+    text-align:center;
+    color:black;
+    font-family: poppins;
+    background-color:transparent;
+    height: 55px;
+    margin-top: 20px;
+    padding: 40px;
+    font-weight: bolder;
+    font-size:40px ;
+}
+     
+body{
+    background-image: url("https://media.istockphoto.com/id/157681198/photo/dandelion-seed.jpg?b=1&s=170667a&w=0&k=20&c=o8JhDhTWH6WeB2yXixZVwLy1HQ0tR01FKdQM6EIeX3g=");
+    font-size:40px ;
+
+   background-size: cover;
+}
+.button{
+    font-size:x-large;
+    color:green;
+}
+label {
+    display: block;
+    font: 1rem 'Fira Sans', sans-serif;
+}
+
+input,
+label {
+    margin: 0.4rem 0;
+}
+.btnstyle{
+font-size: x-large;
+color:green;
+}
+label{
+    font-size:x-large;
+}
+
+    
+
+</style>
+<body><br>
+    <header>CREATE FEEDBACK FORMS</header>
+ <center>
+ <div class="one">
+    <form method="POST">
+    <label for="timestamp">Timestamp:</label>
+    <input type="number" name="time">    
+    <div class="two">
+        <a class="button" href="{{url_for('feedback',typ=1)}}">Preview</a>
+            <button class="btnstyle">Submit</button>
+    </center>  
+        </div>  
+    </div>
+</form>
+</body>
+</html>

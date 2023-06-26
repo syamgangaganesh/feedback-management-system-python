@@ -1,0 +1,22 @@
+* {
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+body {
+    background-image: url('https://thehill.com/wp-content/uploads/sites/2/2022/03/ca_collegeenrollment_istock.jpg?w=1280&h=720&crop=1.jpg');
+    background-size: cover;
+
+}
+.btnstyle {
+    background-color:yellow;
+    color:black;
+    padding:20px;
+    border-radius: 8px;
+    border:none;
+    font-size: 25px;
+    margin: 10px;
+    cursor: pointer;
+}
+.student {
+    margin-top:23%; 
+}
